@@ -1,0 +1,505 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include <locale.h>
+int main ()
+{
+	setlocale(LC_ALL,"Portuguese");
+	int x, y, z;
+	    do {
+	    	system("cls");
+printf("Bem Vindo A Reserva Aérea da Primazia Airlines\n\n ");
+printf("1- Ver Destinos Programados\n\n 2- Ver Escalas e Hora de Check-in\n\n 3- Ver Preços de Bilhetes\n\n ");
+printf("4- Realizar Reserva\n\n 5- Fechar Menu\n\n");
+scanf("%d", &x);
+	switch(x)
+	{
+		case 1:
+			printf("Continentes\n\n ");
+			printf("1- África\n\n 2- Ásia e Pacífico\n\n 3- Américas\n\n 4- Europa\n\n 5- Médio Oriente\n\n 6- Voltar\n\n");
+			scanf("%d", &y);
+				switch(y)
+				{
+					case 1:
+						printf("África\n\n ");
+						printf("África do Sul\n\n Egipto\n\n Marrocos\n\n Namíbia\n\n Costa do Marfim\n\n Etiópia\n\n Tunísia\n\n");
+					break;
+					
+					case 2:
+						printf("Ásia e Pacífico\n\n ");
+						printf("China\n\n Japão\n\n Austrália\n\n Afeganistão\n\n Índia\n\n Filipinas\n\n Indonésia\n\n Maldivas\n\n ");
+						printf("República da Coreia\n\n Tailândia\n\n");
+					break;
+					
+					case 3:
+						printf("Américas\n\n ");
+						printf("Argentina\n\n Brazil\n\n Estados Unidos\n\n México\n\n Canadá\n\n");
+					break;
+					
+					case 4:
+						printf("Europa\n\n ");
+						printf("Alemanha\n\n Rússia\n\n Portugal\n\n Bélgica\n\n Croácia\n\n França\n\n Grécia\n\n Reino Unido\n\n");
+					break;
+					
+					case 5:
+						printf("Oriente Médio\n\n");
+						printf("Emirados Árabes Unidos\n\n Arábia Saudita\n\n Iraque\n\n Irã\n\n Israel\n\n Jordânia\n\n Omã\n\n");
+					break;
+					
+					case 6:
+						printf("Voltar\n\n");
+					break;
+					
+					default:
+						printf("Opção Inválida");
+					break;
+				}
+		break;
+		
+		case 2:
+			printf("Escalas ou Hora de Check-in?\n\n ");
+			printf("1- Escalas\n\n 2- Hora de Check-in\n\n");
+			scanf("%d", &x);
+				switch(x)
+				{
+					case 1:
+						printf("Escolha o Continente\n\n ");
+						printf("1- África\n\n 2- Ásia e Pacífico\n\n 3- Américas\n\n 4- Europa\n\n 5- Médio Oriente\n\n 6- Voltar\n\n");
+						scanf("%d", &y);
+							switch(y)
+							{
+								case 1:
+									system("cls");
+									printf("Escalas para África\n\n ");
+										printf("Origem				Destino					Escalas\n");
+										printf("---------------------------------------------------------------------------------------------------------\n\n");
+										printf("Angola/Luanda			Johannesburgo, África do Sul		Sem Escala\n\n");
+										printf("Angola/Luanda			Cairo, Egipto				Sudão do Sul(1 Escala)\n\n");
+										printf("Angola/Luanda			Casablanca, Marrocos			Nigéria(1 Escala)\n\n");
+										printf("Angola/Luanda			Windhoek, Namíbia			Sem Escala\n\n");
+										printf("Angola/Luanda			Abidjan, Costa do Marfim		Sem Escala\n\n");
+										printf("Angola/Luanda			Adis Abeba, Etiópia			República Democrática do Congo(1 Escala)\n\n");
+										printf("Angola/Luanda			Túnis, Tunísia				Chade(1 Escala)\n\n");
+								
+								break;
+					
+								case 2:
+									system("cls");
+									printf("Escalas para Ásia e Pacífico\n\n ");
+									printf("---------------------------------------------------------------------------------------------------------\n\n");
+										printf("Origem				Destino					Escalas\n\n");
+										printf("Angola/Luanda			Pequim, China				Índia(1 Escala)\n\n");
+										printf("Angola/Luanda			Tóquio, Japão				Sri Lanka(1 Escala)\n\n");
+										printf("Angola/Luanda			Sydney, Austrália			Madagáscar(1 Escala)\n\n");
+										printf("Angola/Luanda			Cabul, Afeganistão			Omã(1 Escala)\n\n");
+										printf("Angola/Luanda			Nova Deli, Índia			Somália(1 Escala)\n\n");
+										printf("Angola/Luanda			Manila, Filipinas			Singapura(1 Escala)\n\n");
+										printf("Angola/Luanda			Jacarta, Indonésia			Singapura(1 Escala)\n\n");
+										printf("Angola/Luanda			Malé, Maldivas				Sem Escala\n\n");
+										printf("Angola/Luanda			Seul, República da Coreia		China(1 Escala)\n\n");
+										printf("Angola/Luanda			Bankok, Tailândia			Sem Escala\n\n");
+										
+								break;
+					
+								case 3:
+										printf("Escalas para Américas\n\n");
+										printf("---------------------------------------------------------------------------------------------------------\n\n");
+										printf("Origem           		Destino             			Escalas\n\n");
+										printf("Angola/Luanda    		Buenos Aires, Argentina			Sem Escala\n\n");
+										printf("Angola/Luanda    		São Paulo, Brasil			Sem Escala\n\n");
+										printf("Angola/Luanda    		Nova Iorque, Estados Unidos		Sem Escala\n\n");
+										printf("Angola/Luanda    		Cidade do México, México		Brasil(1 Escala)\n\n");
+										printf("Angola/Luanda    		Toronto, Canadá				Estados Unidos(1 Escala)\n\n");
+										
+								break;
+					
+								case 4:
+									printf("Escalas para Europa\n\n ");
+										printf("Origem				Destino					Escalas\n\n");
+										printf("---------------------------------------------------------------------------------------------------------\n\n");
+										printf("Angola/Luanda			Berlim, Alemanha			Itália(1 Escala)\n\n");
+										printf("Angola/Luanda			Moscou, Rússia				Árabia Saudita, Cazaquistão(2 Escalas)\n\n");
+										printf("Angola/Luanda			Lisboa, Portugal			Sem Escala\n\n");
+										printf("Angola/Luanda			Bruxelas, Bélgica			Tunísia(1 Escala)\n\n");
+										printf("Angola/Luanda			Zagreb, Croácia				Sem Escala\n\n");
+										printf("Angola/Luanda			Paris, França				Sem Escala\n\n");
+										printf("Angola/Luanda			Atenas, Grécia				Sem Escala\n\n");
+										printf("Angola/Luanda			Londres, Reino Unido			França(1 Escala)\n\n");
+								break;
+						
+								case 5:
+									printf("Escalas para o Oriente Médio\n\n ");
+										printf("Origem				Destino					Escalas\n\n");
+										printf("---------------------------------------------------------------------------------------------------------\n\n");
+										printf("Angola/Luanda			Dubai, Emirados Árabes Unidos		Djibouti(1 Escala)\n\n");
+										printf("Angola/Luanda			Riade, Arábia Saudita			Sem Escala\n\n");
+										printf("Angola/Luanda			Bagdá, Iraque				Sem Escala\n\n");
+										printf("Angola/Luanda			Teerã, Irã				Sem Escala\n\n");
+										printf("Angola/Luanda			Tel Aviv, Israel			Congo, Sudão do Sul Egito(3 Escalas)\n\n");
+										printf("Angola/Luanda			Amã, Jordânia				Sudão(1 Escala)\n\n");
+										printf("Angola/Luanda			Mascate, Omã				Uganda(1 Escala)\n\n");
+										printf("---------------------------------------------------------------------------------------------------------\n\n");
+								break;
+					
+								case 6:
+									printf("Voltar\n\n");
+								break;
+					
+								default:
+									printf("Opção Inválida");
+								break;
+				}
+					break;
+					case 2:
+						printf("Por favor Selecione a região da qual deseja saber a Hora de Check-in\n\n ");
+						printf("1- África\n\n 2- Ásia e Pacífico\n\n 3- Américas\n\n 4- Europa\n\n 5- Médio Oriente\n\n 6- Voltar\n\n");
+						scanf("%d", &y);
+							switch(y)
+							{
+
+					case 1:
+						printf(" África\n\n ");
+						printf("Horário de Check-in para Voos Partindo de Luanda\n");
+						printf("---------------------------------------------------\n");
+						printf("| Aeroporto de Partida |    Destino    | Horário   |\n");
+						printf("---------------------------------------------------\n");
+						printf("| Luanda               | Johannesburg | 18h00     |\n");
+						printf("| Luanda               | Cairo        | 17h45     |\n");
+						printf("| Luanda               | Casablanca   | 16h30     |\n");
+						printf("| Luanda               | Windhoek     | 10h00     |\n");
+						printf("| Luanda               | Abidjan      | 07h10     |\n");
+						printf("| Luanda               | Adis Abeba   | 06h20     |\n");
+						printf("| Luanda               | Túnis        | 17h50     |\n");
+						printf("---------------------------------------------------\n");
+
+					break;
+					
+					case 2:
+						printf("Ásia e Pacífico\n\n ");
+						printf("Horário de Check-in para Voos Partindo de Luanda\n");
+						printf("---------------------------------------------------\n");
+						printf("| Aeroporto de Partida |    Destino    | Horário   |\n");
+						printf("---------------------------------------------------\n");
+						printf("| Luanda               | Pequim	       | 11h10     |\n");
+						printf("| Luanda               | Tóquio        | 20h35     |\n");
+						printf("| Luanda               | Sydney        | 14h30     |\n");
+						printf("| Luanda               | Cabul         | 07h00     |\n");
+						printf("| Luanda               | Nova Deli     | 07h50     |\n");
+						printf("| Luanda               | Manila        | 18h20     |\n");
+						printf("| Luanda               | Jacarta       | 17h20     |\n");
+						printf("| Luanda               | Malé          | 13h30     |\n");
+						printf("| Luanda               | Seul          | 21h50     |\n");
+						printf("| Luanda               | Bankok        | 19h40     |\n");
+						printf("---------------------------------------------------\n");
+
+					break;
+					
+					case 3:
+						printf("Américas\n\n ");
+						printf("Horário de Check-in para Voos Partindo de Luanda\n");
+						printf("---------------------------------------------------\n");
+						printf("| Aeroporto de Partida |    Destino    | Horário   |\n");
+						printf("---------------------------------------------------\n");
+						printf("| Luanda               | Buenos Aires  | 15h00     |\n");
+						printf("| Luanda               | São Paulo     | 10h45     |\n");
+						printf("| Luanda               | Nova Iorque   | 18h30     |\n");
+						printf("| Luanda               | Cidade do México| 12h00     |\n");
+						printf("| Luanda               | Toronto       | 17h10     |\n");	
+						printf("---------------------------------------------------\n");
+
+					break;
+					
+					case 4:
+						printf("Europa\n\n ");
+						printf("Horário de Check-in para Voos Partindo de Luanda\n");
+						printf("---------------------------------------------------\n");
+						printf("| Aeroporto de Partida |    Destino    | Horário   |\n");
+						printf("---------------------------------------------------\n");
+						printf("| Luanda               | Berlim        | 17h00     |\n");
+						printf("| Luanda               | Moscou        | 12h45     |\n");
+						printf("| Luanda               | Lisboa        | 15h30     |\n");
+						printf("| Luanda               | Bruxelas      | 16h00     |\n");
+						printf("| Luanda               | Zagreb        | 19h10     |\n");
+						printf("| Luanda               | Paris         | 06h20     |\n");
+						printf("| Luanda               | Atenas        | 14h40     |\n");
+						printf("| Luanda               | Londres       | 08h50     |\n");
+						printf("---------------------------------------------------\n");
+
+					break;
+					
+					case 5:
+						printf("Oriente Médio\n\n");
+						printf("Horário de Check-in para Voos Partindo de Luanda\n");
+						printf("---------------------------------------------------\n");
+						printf("| Aeroporto de Partida |    Destino    | Horário   |\n");
+						printf("---------------------------------------------------\n");
+						printf("| Luanda               | Dubai         | 20h00     |\n");
+						printf("| Luanda               | Riade         | 17h45     |\n");
+						printf("| Luanda               | Bagdá         | 17h30     |\n");
+						printf("| Luanda               | Teerã         | 10h00     |\n");
+						printf("| Luanda               | Tel Aviv      | 06h10     |\n");
+						printf("| Luanda               | Amã           | 21h20     |\n");
+						printf("| Luanda               | Mascate       | 09h50     |\n");
+						printf("---------------------------------------------------\n");
+
+					break;
+					
+					case 6:
+						printf("Voltar\n\n");
+					break;
+					
+					default:
+						printf("Opção Inválida");
+					break;
+				}
+					break;
+					default:
+						printf("Opção Inválida\n\n");
+					break;
+				}
+		break;
+		
+		case 3:
+			printf("Com Qual Classe Gostaria de Viajar?\n\n ");
+			printf("1-Classe Económica\n\n 2-Classe Executiva\n\n");
+			scanf("%d", &x);
+			switch(x){
+				case 1:
+					printf("Escolha o Continente\n\n ");
+				printf("1- África\n\n 2- Ásia e Pacífico\n\n 3- Américas\n\n 4- Europa\n\n 5- Médio Oriente\n\n 6- Voltar\n\n");
+			scanf("%d", &x);
+						switch(x)
+				{
+					case 1:
+						printf("Preço de Voos Para África - Classe Econômica\n\n ");
+							printf("Partindo de Angola/Luanda para Johannesburgo, na África do Sul -> 404.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para o Cairo, Egito -> 505.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Casablanca, Marrocos -> 404.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Windhoek, Namíbia -> 303.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Abidjan, Costa do Marfim -> 606.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Adis Abeba, Etiópia -> 505.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Túnis, Tunísia -> 505.000kz\n\n "); 
+						
+					break;
+					
+					case 2:
+						printf("Preço de Voos Para a Ásia e o Pacífico - Classe Econômica\n\n ");
+							printf("Partindo de Angola/Luanda para Pequim, China -> 1.374.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Tóquio, Japão -> 1.190.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Sydney, Austrália -> 1.580.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Cabul, Afeganistão -> 1.336.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Nova Deli, Índia -> 837.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Manila, Filipinas -> 1.088.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Jacarta, Indonésia -> 972.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Malé, Maldivas -> 1.134.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Seul, República da Coreia -> 1.332.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Bangkok, Tailândia -> 1.049.000kz\n\n ");
+					break;
+					
+					case 3:
+							printf("Preço de Voos Para as Américas - Classe Econômica\n\n ");
+							printf("Partindo de Angola/Luanda para Buenos Aires, Argentina -> 572.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para São Paulo, Brasil -> 601.000kz\n\n");
+							printf("Partindo de Angola/Luanda para Nova Iorque, Estados Unidos -> 782.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Cidade do México, México -> 732.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Toronto, Canadá -> 920.000kz\n\n  ");
+					break;
+					
+					case 4:
+							printf("Preço de Voos Para a Europa - Classe Econômica\n\n ");
+						printf("Partindo de Angola/Luanda para Berlim, Alemanha -> 807.000kz\n\n ");
+						printf("Partindo de Angola/Luanda para Moscou, Rússia -> 1.070.000kz\n\n ");
+						printf("Partindo de Angola/Luanda para Lisboa, Portugal -> 520.000kz\n\n ");
+						printf("Partindo de Angola/Luanda para Bruxelas, Bélgica -> 705.000kz\n\n ");
+						printf("Partindo de Angola/Luanda para Zagreb, Croácia -> 870.000kz\n\n ");
+						printf("Partindo de Angola/Luanda para Paris, França -> 737.000kz\n\n ");
+						printf("Partindo de Angola/Luanda para Atenas, Grécia -> 965.000kz\n\n ");
+						printf("Partindo de Angola/Luanda para Londres, Reino Unido -> 680.000kz\n\n ");
+
+					break;
+					
+					case 5:
+						printf("Preço de Voos do Oriente Médio - Classe Econômica\n\n ");
+						printf("Partindo de Angola/Luanda para Dubai, Emirados Árabes Unidos -> 960.000kz\n\n ");
+						printf("Partindo de Angola/Luanda para Riade, Arábia Saudita -> 1.180.000kz\n\n ");
+						printf("Partindo de Angola/Luanda para Bagdá, Iraque -> 1.160.000kz\n\n ");
+						printf("Partindo de Angola/Luanda para Teerã, Irã -> 1.042.000kz\n\n ");
+						printf("Partindo de Angola/Luanda para Tel Aviv, Israel -> 1.245.000kz\n\n ");
+						printf("Partindo de Angola/Luanda para Amã, Jordânia -> 1.045.000kz\n\n ");
+						printf("Partindo de Angola/Luanda para Mascate, Omã -> 1.080.000kz\n\n ");
+	
+					break;
+					
+					case 6:
+						printf("Voltar\n\n");
+					break;
+					
+					default:
+						printf("Opção Inválida");
+					break;
+				}
+				break;
+				case 2:
+					printf("Escolha o Continente\n\n ");
+				printf("1- África\n\n 2- Ásia e Pacífico\n\n 3- Américas\n\n 4- Europa\n\n 5- Médio Oriente\n\n 6- Voltar\n\n");
+			scanf("%d", &y);
+						switch(y)
+				{
+					case 1:
+						printf("Preço de Voos Para África - Classe Executiva\n\n ");
+							printf("Partindo de Angola/Luanda para Johannesburgo, na África do Sul ->  1.771.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para o Cairo, Egito -> 2.730.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Casablanca, Marrocos -> 2.644.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Windhoek, Namíbia ->  1.764.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Abidjan, Costa do Marfim -> 2.461.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Adis Abeba, Etiópia -> 2.160.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Túnis, Tunísia -> 2.987.000kz\n\n "); 
+					break;
+					
+					case 2:
+						printf("Ásia e Pacífico - Classe Executiva\n\n ");
+							printf("Partindo de Angola/Luanda para Pequim, China -> 4.197.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Tóquio, Japão -> 3.667.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Sydney, Austrália -> 4.999.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Cabul, Afeganistão -> 3.292.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Nova Deli, Índia -> 4.138.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Manila, Filipinas -> 2.605.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Jacarta, Indonésia -> 3.420.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Malé, Maldivas -> 3.044.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Seul, República da Coreia -> 3.532.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Bangkok, Tailândia -> 4.111.000kz\n\n ");
+					break;
+					
+					case 3:
+ 							printf("Preço de Voos Para as Américas - Classe Executiva\n\n ");
+							printf("Partindo de Angola/Luanda para Buenos Aires, Argentina -> 8.596.000kz\n\n ");
+ 							printf("Partindo de Angola/Luanda para São Paulo, Brasil -> 7.853.000kz\n\n");
+ 							printf("Partindo de Angola/Luanda para Nova Iorque, Estados Unidos -> 9.711.000kz\n\n ");
+ 							printf("Partindo de Angola/Luanda para Cidade do México, México -> 9.498.000kz\n\n ");
+ 							printf("Partindo de Angola/Luanda para Toronto, Canadá -> 9.955.000kz\n\n  ");
+					break;
+					
+					case 4:
+						printf("Europa\n\n ");
+ 							printf("Preço de Voos Para a Europa - Classe Executiva\n\n ");
+ 							printf("Partindo de Angola/Luanda para Alemanha -> 4.992.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para Rússia -> 7.266.000kz\n\n ");
+ 							printf("Partindo de Angola/Luanda para Portugal -> 3.484.000kz\n\n ");
+ 							printf("Partindo de Angola/Luanda para Bélgica -> 4.615.000kz\n\n ");
+ 							printf("Partindo de Angola/Luanda para Croácia -> 4.693.000kz\n\n ");
+							printf("Partindo de Angola/Luanda para França -> 5.434.000kz\n\n ");
+ 							printf("Partindo de Angola/Luanda para Grécia -> 5.820.000kz\n\n ");
+ 							printf("Partindo de Angola/Luanda para Reino Unido -> 5.929.000kz\n\n ");
+					break;
+					
+					case 5:
+							printf("Preço de Voos Para o Oriente Médio - Classe Executiva\n\n ");
+							printf("Partindo de Angola/Luanda para Emirados Árabes Unidos -> 12.987.000kz\n\n ");
+ 							printf("Partindo de Angola/Luanda para Arábia Saudita -> 10.486.000kz\n\n ");
+ 							printf("Partindo de Angola/Luanda para Iraque -> 12.752.000kz\n\n ");
+ 							printf("Partindo de Angola/Luanda para Irã -> 11.745.000kz\n\n ");
+ 							printf("Partindo de Angola/Luanda para Israel -> 11.294.000kz\n\n ");
+ 							printf("Partindo de Angola/Luanda para Jordânia -> 10.453.000kz\n\n ");
+ 							printf("Partindo de Angola/Luanda para Omã -> 12.078.000kz\n\n ");
+					break;
+					
+					case 6:
+						printf("Voltar\n\n");
+					break;
+					
+					default:
+						printf("Opção Inválida");
+					break;
+				}
+				break;
+			}
+		break;
+		
+		case 4:
+			printf("Reservas\n\n");
+			printf("Para Onde Deseja Ir?");
+			printf("1- África\n\n 2- Ásia e Pacífico\n\n 3- Américas\n\n 4- Europa\n\n 5- Médio Oriente\n\n 6- Voltar\n\n");
+			scanf("%d", &z);
+				switch(z)
+				{
+					case 1:
+						printf("África\n\n ");
+						printf("1-África do Sul\n\n 2-Egipto\n\n 3-Marrocos\n\n 4-Namíbia\n\n 5-Costa do Marfim\n\n 6-Etiópia\n\n 7-Tunísia\n\n");
+						scanf("%d", &z);
+							switch(z)
+							{
+								case 1:
+									printf("Com qual classe deseja viajar?");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:
+												printf("Quantos Bilhetes deseja Comprar?");
+												scanf("%d", &x);
+													printf("");
+																								
+													
+												
+											break;
+											case 2:
+											break;
+										}
+								break;
+								default:
+								break;
+							}
+						
+					break;
+					
+					case 2:
+						printf("Ásia e Pacífico\n\n ");
+						printf("China\n\n Japão\n\n Austrália\n\n Afeganistão\n\n Índia\n\n Filipinas\n\n Indonésia\n\n Maldivas\n\n ");
+						printf("República da Coreia\n\n Tailândia\n\n");
+					break;
+					
+					case 3:
+						printf("Américas\n\n ");
+						printf("Argentina\n\n Brazil\n\n Estados Unidos\n\n México\n\n Canadá\n\n");
+					break;
+					
+					case 4:
+						printf("Europa\n\n ");
+						printf("Alemanha\n\n Rússia\n\n Portugal\n\n Bélgica\n\n Croácia\n\n França\n\n Grécia\n\n Reino Unido\n\n");
+					break;
+					
+					case 5:
+						printf("Oriente Médio\n\n");
+						printf("Emirados Árabes Unidos\n\n Arábia Saudita\n\n Iraque\n\n Irã\n\n Israel\n\n Jordânia\n\n Omã\n\n");
+					break;
+					
+					case 6:
+						printf("Voltar\n\n");
+					break;
+					
+					default:
+						printf("Opção Inválida");
+					break;
+				}
+
+		break;
+		
+		case 5:
+			printf("O menu está a fechar...");
+		break;
+		
+		default:
+			printf("Opção Incorreta");
+		break;
+		}
+		
+		if (x != 5) {
+          printf("\nPressione qualquer tecla para voltar ao menu principal.\n");
+          getchar();
+     	getchar();
+        }
+    } while(x != 5);
+
+		
+	
+return 0;
+}
