@@ -1,6 +1,9 @@
+//Bibliotecas
 #include <stdio.h>
 #include<stdlib.h>
 #include <locale.h>
+
+//Declaração das Variáveis
 int main ()
 {
 	setlocale(LC_ALL,"Portuguese");
@@ -8,43 +11,60 @@ int main ()
 	int HC;
 	    do {
 	    	system("cls");
+	    	
+//Inicio do Bloco de Comandos
 printf("Bem Vindo A Reserva Aérea da Primazia Airlines\n\n ");
 printf("1- Ver Destinos Programados\n\n 2- Ver Escalas e Hora de Check-in\n\n 3- Ver Preços de Bilhetes\n\n ");
 printf("4- Realizar Reserva\n\n 5- Fechar Menu\n\n");
 scanf("%d", &x);
 
+	//É aqui que começa o uso da estrtura de Decisão "Switch Case", que será a base de toda este Bloco de Comandos
 	switch(x)
 	{
+		
+		//Case 1: O Menu para ver os Destinos Programados
 		case 1:
 			printf("Continentes\n\n ");
 			printf("1- África\n\n 2- Ásia e Pacífico\n\n 3- Américas\n\n 4- Europa\n\n 5- Médio Oriente\n\n 6- Voltar\n\n");
 			scanf("%d", &y);
+			
+			//Estrutura de Decisão Switch Case
 				switch(y)
 				{
 					case 1:
 						printf("África\n\n ");
-						printf("África do Sul\n\n Egipto\n\n Marrocos\n\n Namíbia\n\n Costa do Marfim\n\n Etiópia\n\n Tunísia\n\n");
+							printf("----------------------------------------------------------------------------------------------------\n ");
+							printf("África do Sul\n\n Egipto\n\n Marrocos\n\n Namíbia\n\n Costa do Marfim\n\n Etiópia\n\n Tunísia\n");
+							printf("----------------------------------------------------------------------------------------------------\n");
 					break;
 					
 					case 2:
 						printf("Ásia e Pacífico\n\n ");
-						printf("China\n\n Japão\n\n Austrália\n\n Afeganistão\n\n Índia\n\n Filipinas\n\n Indonésia\n\n Maldivas\n\n ");
-						printf("República da Coreia\n\n Tailândia\n\n");
+							printf("----------------------------------------------------------------------------------------------------\n ");
+							printf("China\n\n Japão\n\n Austrália\n\n Afeganistão\n\n Índia\n\n Filipinas\n\n Indonésia\n\n Maldivas\n\n ");
+							printf("República da Coreia\n\n Tailândia\n\n");
+							printf("----------------------------------------------------------------------------------------------------\n ");
 					break;
 					
 					case 3:
 						printf("Américas\n\n ");
-						printf("Argentina\n\n Brazil\n\n Estados Unidos\n\n México\n\n Canadá\n\n");
+							printf("----------------------------------------------------------------------------------------------------\n ");
+							printf("Argentina\n\n Brazil\n\n Estados Unidos\n\n México\n\n Canadá\n\n");
+							printf("----------------------------------------------------------------------------------------------------\n ");
 					break;
 					
 					case 4:
 						printf("Europa\n\n ");
-						printf("Alemanha\n\n Rússia\n\n Portugal\n\n Bélgica\n\n Croácia\n\n França\n\n Grécia\n\n Reino Unido\n\n");
+							printf("----------------------------------------------------------------------------------------------------\n ");
+							printf("Alemanha\n\n Rússia\n\n Portugal\n\n Bélgica\n\n Croácia\n\n França\n\n Grécia\n\n Reino Unido\n\n");
+							printf("----------------------------------------------------------------------------------------------------\n ");
 					break;
 					
 					case 5:
 						printf("Oriente Médio\n\n");
-						printf("Emirados Árabes Unidos\n\n Arábia Saudita\n\n Iraque\n\n Irã\n\n Israel\n\n Jordânia\n\n Omã\n\n");
+							printf("----------------------------------------------------------------------------------------------------\n ");
+							printf("Emirados Árabes Unidos\n\n Arábia Saudita\n\n Iraque\n\n Irã\n\n Israel\n\n Jordânia\n\n Omã\n\n");
+							printf("----------------------------------------------------------------------------------------------------\n ");
 					break;
 					
 					case 6:
@@ -57,21 +77,24 @@ scanf("%d", &x);
 				}
 		break;
 		
+		//Case 2: O Menu para ver as Escalas e ver as Horas de Check-in
 		case 2:
 			printf("Escalas ou Hora de Check-in?\n\n ");
 			printf("1- Escalas\n\n 2- Hora de Check-in\n\n");
 			scanf("%d", &x);
+			
 				switch(x)
 				{
 					case 1:
 						printf("Escolha o Continente\n\n ");
 						printf("1- África\n\n 2- Ásia e Pacífico\n\n 3- Américas\n\n 4- Europa\n\n 5- Médio Oriente\n\n 6- Voltar\n\n");
 						scanf("%d", &y);
+						
 							switch(y)
 							{
 								case 1:
 									system("cls");
-									printf("Escalas para África\n\n ");
+										printf("Escalas para África\n\n ");
 										printf("Origem				Destino					Escalas\n");
 										printf("---------------------------------------------------------------------------------------------------------\n\n");
 										printf("Angola/Luanda			Johannesburgo, África do Sul		Sem Escala\n\n");
@@ -86,8 +109,8 @@ scanf("%d", &x);
 					
 								case 2:
 									system("cls");
-									printf("Escalas para Ásia e Pacífico\n\n ");
-									printf("---------------------------------------------------------------------------------------------------------\n\n");
+										printf("Escalas para Ásia e Pacífico\n\n ");
+										printf("---------------------------------------------------------------------------------------------------------\n\n");
 										printf("Origem				Destino					Escalas\n\n");
 										printf("Angola/Luanda			Pequim, China				Índia(1 Escala)\n\n");
 										printf("Angola/Luanda			Tóquio, Japão				Sri Lanka(1 Escala)\n\n");
@@ -115,7 +138,7 @@ scanf("%d", &x);
 								break;
 					
 								case 4:
-									printf("Escalas para Europa\n\n ");
+										printf("Escalas para Europa\n\n ");
 										printf("Origem				Destino					Escalas\n\n");
 										printf("---------------------------------------------------------------------------------------------------------\n\n");
 										printf("Angola/Luanda			Berlim, Alemanha			Itália(1 Escala)\n\n");
@@ -129,7 +152,7 @@ scanf("%d", &x);
 								break;
 						
 								case 5:
-									printf("Escalas para o Oriente Médio\n\n ");
+										printf("Escalas para o Oriente Médio\n\n ");
 										printf("Origem				Destino					Escalas\n\n");
 										printf("---------------------------------------------------------------------------------------------------------\n\n");
 										printf("Angola/Luanda			Dubai, Emirados Árabes Unidos		Djibouti(1 Escala)\n\n");
@@ -151,281 +174,506 @@ scanf("%d", &x);
 								break;
 				}
 					break;
+					
 					case 2:
 						printf("Por favor Selecione a região da qual deseja saber a Hora de Check-in\n\n ");
 						printf("1- África\n\n 2- Ásia e Pacífico\n\n 3- Américas\n\n 4- Europa\n\n 5- Médio Oriente\n\n 6- Voltar\n\n");
 						scanf("%d", &y);
+						
 							switch(y)
 							{
 
-					case 1:
-						printf(" África\n\n ");
-						printf("Horário de Check-in para Voos Partindo de Luanda\n");
-						printf("---------------------------------------------------\n");
-						printf("| Aeroporto de Partida |    Destino    | Horário   |\n");
-						printf("---------------------------------------------------\n");
-						printf("| Luanda               | Johannesburg | 18h00     |\n");
-						printf("| Luanda               | Cairo        | 17h45     |\n");
-						printf("| Luanda               | Casablanca   | 16h30     |\n");
-						printf("| Luanda               | Windhoek     | 10h00     |\n");
-						printf("| Luanda               | Abidjan      | 07h10     |\n");
-						printf("| Luanda               | Adis Abeba   | 06h20     |\n");
-						printf("| Luanda               | Túnis        | 17h50     |\n");
-						printf("---------------------------------------------------\n");
-
+								case 1:
+										printf(" África\n\n ");
+										printf("Horário de Check-in para Voos Partindo de Luanda\n");
+										printf("---------------------------------------------------\n");
+										printf("| Aeroporto de Partida |    Destino    | Horário   |\n");
+										printf("---------------------------------------------------\n");
+										printf("| Luanda               | Johannesburg | 18h00     |\n");
+										printf("| Luanda               | Cairo        | 17h45     |\n");
+										printf("| Luanda               | Casablanca   | 16h30     |\n");
+										printf("| Luanda               | Windhoek     | 10h00     |\n");
+										printf("| Luanda               | Abidjan      | 07h10     |\n");
+										printf("| Luanda               | Adis Abeba   | 06h20     |\n");
+										printf("| Luanda               | Túnis        | 17h50     |\n");
+										printf("---------------------------------------------------\n");
+								break;
+					
+								case 2:
+										printf("Ásia e Pacífico\n\n ");
+										printf("Horário de Check-in para Voos Partindo de Luanda\n");
+										printf("---------------------------------------------------\n");
+										printf("| Aeroporto de Partida |    Destino    | Horário   |\n");
+										printf("---------------------------------------------------\n");
+										printf("| Luanda               | Pequim	       | 11h10     |\n");
+										printf("| Luanda               | Tóquio        | 20h35     |\n");
+										printf("| Luanda               | Sydney        | 14h30     |\n");
+										printf("| Luanda               | Cabul         | 07h00     |\n");
+										printf("| Luanda               | Nova Deli     | 07h50     |\n");
+										printf("| Luanda               | Manila        | 18h20     |\n");
+										printf("| Luanda               | Jacarta       | 17h20     |\n");
+										printf("| Luanda               | Malé          | 13h30     |\n");
+										printf("| Luanda               | Seul          | 21h50     |\n");
+										printf("| Luanda               | Bankok        | 19h40     |\n");
+										printf("---------------------------------------------------\n");
+								break;
+					
+								case 3:
+										printf("Américas\n\n ");
+										printf("Horário de Check-in para Voos Partindo de Luanda\n");
+										printf("---------------------------------------------------\n");
+										printf("| Aeroporto de Partida |    Destino    | Horário   |\n");
+										printf("---------------------------------------------------\n");
+										printf("| Luanda               | Buenos Aires  | 15h00     |\n");
+										printf("| Luanda               | São Paulo     | 10h45     |\n");
+										printf("| Luanda               | Nova Iorque   | 18h30     |\n");
+										printf("| Luanda               | Cidade do México| 12h00     |\n");
+										printf("| Luanda               | Toronto       | 17h10     |\n");	
+										printf("---------------------------------------------------\n");
+								break;
+					
+								case 4:
+										printf("Europa\n\n ");
+										printf("Horário de Check-in para Voos Partindo de Luanda\n");
+										printf("---------------------------------------------------\n");
+										printf("| Aeroporto de Partida |    Destino    | Horário   |\n");
+										printf("---------------------------------------------------\n");
+										printf("| Luanda               | Berlim        | 17h00     |\n");
+										printf("| Luanda               | Moscou        | 12h45     |\n");
+										printf("| Luanda               | Lisboa        | 15h30     |\n");
+										printf("| Luanda               | Bruxelas      | 16h00     |\n");
+										printf("| Luanda               | Zagreb        | 19h10     |\n");
+										printf("| Luanda               | Paris         | 06h20     |\n");
+										printf("| Luanda               | Atenas        | 14h40     |\n");
+										printf("| Luanda               | Londres       | 08h50     |\n");
+										printf("---------------------------------------------------\n");
+								break;
+					
+								case 5:
+										printf("Oriente Médio\n\n");
+										printf("Horário de Check-in para Voos Partindo de Luanda\n");
+										printf("---------------------------------------------------\n");
+										printf("| Aeroporto de Partida |    Destino    | Horário   |\n");
+										printf("---------------------------------------------------\n");
+										printf("| Luanda               | Dubai         | 20h00     |\n");
+										printf("| Luanda               | Riade         | 17h45     |\n");
+										printf("| Luanda               | Bagdá         | 17h30     |\n");
+										printf("| Luanda               | Teerã         | 10h00     |\n");
+										printf("| Luanda               | Tel Aviv      | 06h10     |\n");
+										printf("| Luanda               | Amã           | 21h20     |\n");
+										printf("| Luanda               | Mascate       | 09h50     |\n");
+										printf("---------------------------------------------------\n");
+								break;
+					
+								case 6:
+										printf("Voltar\n\n");
+								break;
+					
+								default:
+										printf("Opção Inválida");
+								break;
+							}
 					break;
 					
-					case 2:
-						printf("Ásia e Pacífico\n\n ");
-						printf("Horário de Check-in para Voos Partindo de Luanda\n");
-						printf("---------------------------------------------------\n");
-						printf("| Aeroporto de Partida |    Destino    | Horário   |\n");
-						printf("---------------------------------------------------\n");
-						printf("| Luanda               | Pequim	       | 11h10     |\n");
-						printf("| Luanda               | Tóquio        | 20h35     |\n");
-						printf("| Luanda               | Sydney        | 14h30     |\n");
-						printf("| Luanda               | Cabul         | 07h00     |\n");
-						printf("| Luanda               | Nova Deli     | 07h50     |\n");
-						printf("| Luanda               | Manila        | 18h20     |\n");
-						printf("| Luanda               | Jacarta       | 17h20     |\n");
-						printf("| Luanda               | Malé          | 13h30     |\n");
-						printf("| Luanda               | Seul          | 21h50     |\n");
-						printf("| Luanda               | Bankok        | 19h40     |\n");
-						printf("---------------------------------------------------\n");
-
-					break;
-					
-					case 3:
-						printf("Américas\n\n ");
-						printf("Horário de Check-in para Voos Partindo de Luanda\n");
-						printf("---------------------------------------------------\n");
-						printf("| Aeroporto de Partida |    Destino    | Horário   |\n");
-						printf("---------------------------------------------------\n");
-						printf("| Luanda               | Buenos Aires  | 15h00     |\n");
-						printf("| Luanda               | São Paulo     | 10h45     |\n");
-						printf("| Luanda               | Nova Iorque   | 18h30     |\n");
-						printf("| Luanda               | Cidade do México| 12h00     |\n");
-						printf("| Luanda               | Toronto       | 17h10     |\n");	
-						printf("---------------------------------------------------\n");
-
-					break;
-					
-					case 4:
-						printf("Europa\n\n ");
-						printf("Horário de Check-in para Voos Partindo de Luanda\n");
-						printf("---------------------------------------------------\n");
-						printf("| Aeroporto de Partida |    Destino    | Horário   |\n");
-						printf("---------------------------------------------------\n");
-						printf("| Luanda               | Berlim        | 17h00     |\n");
-						printf("| Luanda               | Moscou        | 12h45     |\n");
-						printf("| Luanda               | Lisboa        | 15h30     |\n");
-						printf("| Luanda               | Bruxelas      | 16h00     |\n");
-						printf("| Luanda               | Zagreb        | 19h10     |\n");
-						printf("| Luanda               | Paris         | 06h20     |\n");
-						printf("| Luanda               | Atenas        | 14h40     |\n");
-						printf("| Luanda               | Londres       | 08h50     |\n");
-						printf("---------------------------------------------------\n");
-
-					break;
-					
-					case 5:
-						printf("Oriente Médio\n\n");
-						printf("Horário de Check-in para Voos Partindo de Luanda\n");
-						printf("---------------------------------------------------\n");
-						printf("| Aeroporto de Partida |    Destino    | Horário   |\n");
-						printf("---------------------------------------------------\n");
-						printf("| Luanda               | Dubai         | 20h00     |\n");
-						printf("| Luanda               | Riade         | 17h45     |\n");
-						printf("| Luanda               | Bagdá         | 17h30     |\n");
-						printf("| Luanda               | Teerã         | 10h00     |\n");
-						printf("| Luanda               | Tel Aviv      | 06h10     |\n");
-						printf("| Luanda               | Amã           | 21h20     |\n");
-						printf("| Luanda               | Mascate       | 09h50     |\n");
-						printf("---------------------------------------------------\n");
-
-					break;
-					
-					case 6:
-						printf("Voltar\n\n");
-					break;
-					
-					default:
-						printf("Opção Inválida");
-					break;
-				}
-					break;
 					default:
 						printf("Opção Inválida\n\n");
 					break;
 				}
 		break;
 		
+		//Case 3: Menu para ver os Preços dos Bilhetes
 		case 3:
 			printf("Com Qual Classe Gostaria de Viajar?\n\n ");
 			printf("1-Classe Económica\n\n 2-Classe Executiva\n\n");
 			scanf("%d", &x);
-			switch(x){
+			
+			switch(x)
+			{
 				case 1:
 					printf("Escolha o Continente\n\n ");
-				printf("1- África\n\n 2- Ásia e Pacífico\n\n 3- Américas\n\n 4- Europa\n\n 5- Médio Oriente\n\n 6- Voltar\n\n");
-			scanf("%d", &x);
+					printf("1- África\n\n 2- Ásia e Pacífico\n\n 3- Américas\n\n 4- Europa\n\n 5- Médio Oriente\n\n 6- Voltar\n\n");
+					scanf("%d", &x);
+			
 						switch(x)
-				{
-					case 1:
-						printf("Preço de Voos Para África - Classe Econômica\n\n ");
-							printf("Partindo de Angola/Luanda para Johannesburgo, na África do Sul -> 404.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para o Cairo, Egito -> 505.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Casablanca, Marrocos -> 404.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Windhoek, Namíbia -> 303.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Abidjan, Costa do Marfim -> 606.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Adis Abeba, Etiópia -> 505.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Túnis, Tunísia -> 505.000kz\n\n "); 
+						{
+							case 1:
+								printf("Preço de Voos Para África - Classe Econômica\n\n ");
+								printf("Partindo de Angola/Luanda para Johannesburgo, na África do Sul -> 404.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para o Cairo, Egito -> 505.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Casablanca, Marrocos -> 404.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Windhoek, Namíbia -> 303.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Abidjan, Costa do Marfim -> 606.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Adis Abeba, Etiópia -> 505.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Túnis, Tunísia -> 505.000kz\n\n "); 
 						
-					break;
+							break;
 					
-					case 2:
-						printf("Preço de Voos Para a Ásia e o Pacífico - Classe Econômica\n\n ");
-							printf("Partindo de Angola/Luanda para Pequim, China -> 1.374.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Tóquio, Japão -> 1.190.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Sydney, Austrália -> 1.580.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Cabul, Afeganistão -> 1.336.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Nova Deli, Índia -> 837.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Manila, Filipinas -> 1.088.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Jacarta, Indonésia -> 972.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Malé, Maldivas -> 1.134.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Seul, República da Coreia -> 1.332.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Bangkok, Tailândia -> 1.049.000kz\n\n ");
-					break;
+							case 2:
+								printf("Preço de Voos Para a Ásia e o Pacífico - Classe Econômica\n\n ");
+								printf("Partindo de Angola/Luanda para Pequim, China -> 1.374.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Tóquio, Japão -> 1.190.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Sydney, Austrália -> 1.580.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Cabul, Afeganistão -> 1.336.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Nova Deli, Índia -> 837.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Manila, Filipinas -> 1.088.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Jacarta, Indonésia -> 972.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Malé, Maldivas -> 1.134.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Seul, República da Coreia -> 1.332.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Bangkok, Tailândia -> 1.049.000kz\n\n ");
+							break;
 					
-					case 3:
-							printf("Preço de Voos Para as Américas - Classe Econômica\n\n ");
-							printf("Partindo de Angola/Luanda para Buenos Aires, Argentina -> 572.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para São Paulo, Brasil -> 601.000kz\n\n");
-							printf("Partindo de Angola/Luanda para Nova Iorque, Estados Unidos -> 782.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Cidade do México, México -> 732.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Toronto, Canadá -> 920.000kz\n\n  ");
-					break;
+							case 3:
+								printf("Preço de Voos Para as Américas - Classe Econômica\n\n ");
+								printf("Partindo de Angola/Luanda para Buenos Aires, Argentina -> 572.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para São Paulo, Brasil -> 601.000kz\n\n");
+								printf("Partindo de Angola/Luanda para Nova Iorque, Estados Unidos -> 782.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Cidade do México, México -> 732.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Toronto, Canadá -> 920.000kz\n\n  ");
+							break;
 					
-					case 4:
-							printf("Preço de Voos Para a Europa - Classe Econômica\n\n ");
-						printf("Partindo de Angola/Luanda para Berlim, Alemanha -> 807.000kz\n\n ");
-						printf("Partindo de Angola/Luanda para Moscou, Rússia -> 1.070.000kz\n\n ");
-						printf("Partindo de Angola/Luanda para Lisboa, Portugal -> 520.000kz\n\n ");
-						printf("Partindo de Angola/Luanda para Bruxelas, Bélgica -> 705.000kz\n\n ");
-						printf("Partindo de Angola/Luanda para Zagreb, Croácia -> 870.000kz\n\n ");
-						printf("Partindo de Angola/Luanda para Paris, França -> 737.000kz\n\n ");
-						printf("Partindo de Angola/Luanda para Atenas, Grécia -> 965.000kz\n\n ");
-						printf("Partindo de Angola/Luanda para Londres, Reino Unido -> 680.000kz\n\n ");
+							case 4:
+								printf("Preço de Voos Para a Europa - Classe Econômica\n\n ");
+								printf("Partindo de Angola/Luanda para Berlim, Alemanha -> 807.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Moscou, Rússia -> 1.070.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Lisboa, Portugal -> 520.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Bruxelas, Bélgica -> 705.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Zagreb, Croácia -> 870.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Paris, França -> 737.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Atenas, Grécia -> 965.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Londres, Reino Unido -> 680.000kz\n\n ");
 
-					break;
+							break;
 					
-					case 5:
-						printf("Preço de Voos do Oriente Médio - Classe Econômica\n\n ");
-						printf("Partindo de Angola/Luanda para Dubai, Emirados Árabes Unidos -> 960.000kz\n\n ");
-						printf("Partindo de Angola/Luanda para Riade, Arábia Saudita -> 1.180.000kz\n\n ");
-						printf("Partindo de Angola/Luanda para Bagdá, Iraque -> 1.160.000kz\n\n ");
-						printf("Partindo de Angola/Luanda para Teerã, Irã -> 1.042.000kz\n\n ");
-						printf("Partindo de Angola/Luanda para Tel Aviv, Israel -> 1.245.000kz\n\n ");
-						printf("Partindo de Angola/Luanda para Amã, Jordânia -> 1.045.000kz\n\n ");
-						printf("Partindo de Angola/Luanda para Mascate, Omã -> 1.080.000kz\n\n ");
+							case 5:
+								printf("Preço de Voos do Oriente Médio - Classe Econômica\n\n ");
+								printf("Partindo de Angola/Luanda para Dubai, Emirados Árabes Unidos -> 960.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Riade, Arábia Saudita -> 1.180.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Bagdá, Iraque -> 1.160.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Teerã, Irã -> 1.042.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Tel Aviv, Israel -> 1.245.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Amã, Jordânia -> 1.045.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Mascate, Omã -> 1.080.000kz\n\n ");
 	
-					break;
+							break;
 					
-					case 6:
-						printf("Voltar\n\n");
-					break;
+							case 6:
+								printf("Voltar\n\n");
+							break;
 					
-					default:
-						printf("Opção Inválida");
-					break;
-				}
+							default:
+								printf("Opção Inválida");
+							break;
+						}
 				break;
+				
 				case 2:
 					printf("Escolha o Continente\n\n ");
-				printf("1- África\n\n 2- Ásia e Pacífico\n\n 3- Américas\n\n 4- Europa\n\n 5- Médio Oriente\n\n 6- Voltar\n\n");
-			scanf("%d", &y);
+					printf("1- África\n\n 2- Ásia e Pacífico\n\n 3- Américas\n\n 4- Europa\n\n 5- Médio Oriente\n\n 6- Voltar\n\n");
+					scanf("%d", &y);
+					
 						switch(y)
-				{
-					case 1:
-						printf("Preço de Voos Para África - Classe Executiva\n\n ");
-							printf("Partindo de Angola/Luanda para Johannesburgo, na África do Sul ->  1.771.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para o Cairo, Egito -> 2.730.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Casablanca, Marrocos -> 2.644.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Windhoek, Namíbia ->  1.764.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Abidjan, Costa do Marfim -> 2.461.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Adis Abeba, Etiópia -> 2.160.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Túnis, Tunísia -> 2.987.000kz\n\n "); 
-					break;
+						{
+							case 1:
+								printf("Preço de Voos Para África - Classe Executiva\n\n ");
+								printf("Partindo de Angola/Luanda para Johannesburgo, na África do Sul ->  1.771.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para o Cairo, Egito -> 2.730.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Casablanca, Marrocos -> 2.644.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Windhoek, Namíbia ->  1.764.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Abidjan, Costa do Marfim -> 2.461.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Adis Abeba, Etiópia -> 2.160.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Túnis, Tunísia -> 2.987.000kz\n\n "); 
+							break;
 					
-					case 2:
-						printf("Ásia e Pacífico - Classe Executiva\n\n ");
-							printf("Partindo de Angola/Luanda para Pequim, China -> 4.197.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Tóquio, Japão -> 3.667.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Sydney, Austrália -> 4.999.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Cabul, Afeganistão -> 3.292.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Nova Deli, Índia -> 4.138.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Manila, Filipinas -> 2.605.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Jacarta, Indonésia -> 3.420.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Malé, Maldivas -> 3.044.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Seul, República da Coreia -> 3.532.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Bangkok, Tailândia -> 4.111.000kz\n\n ");
-					break;
+							case 2:
+								printf("Ásia e Pacífico - Classe Executiva\n\n ");
+								printf("Partindo de Angola/Luanda para Pequim, China -> 4.197.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Tóquio, Japão -> 3.667.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Sydney, Austrália -> 4.999.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Cabul, Afeganistão -> 3.292.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Nova Deli, Índia -> 4.138.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Manila, Filipinas -> 2.605.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Jacarta, Indonésia -> 3.420.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Malé, Maldivas -> 3.044.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Seul, República da Coreia -> 3.532.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Bangkok, Tailândia -> 4.111.000kz\n\n ");
+							break;
 					
-					case 3:
- 							printf("Preço de Voos Para as Américas - Classe Executiva\n\n ");
-							printf("Partindo de Angola/Luanda para Buenos Aires, Argentina -> 8.596.000kz\n\n ");
- 							printf("Partindo de Angola/Luanda para São Paulo, Brasil -> 7.853.000kz\n\n");
- 							printf("Partindo de Angola/Luanda para Nova Iorque, Estados Unidos -> 9.711.000kz\n\n ");
- 							printf("Partindo de Angola/Luanda para Cidade do México, México -> 9.498.000kz\n\n ");
- 							printf("Partindo de Angola/Luanda para Toronto, Canadá -> 9.955.000kz\n\n  ");
-					break;
+							case 3:
+ 								printf("Preço de Voos Para as Américas - Classe Executiva\n\n ");
+								printf("Partindo de Angola/Luanda para Buenos Aires, Argentina -> 8.596.000kz\n\n ");
+ 								printf("Partindo de Angola/Luanda para São Paulo, Brasil -> 7.853.000kz\n\n");
+ 								printf("Partindo de Angola/Luanda para Nova Iorque, Estados Unidos -> 9.711.000kz\n\n ");
+ 								printf("Partindo de Angola/Luanda para Cidade do México, México -> 9.498.000kz\n\n ");
+ 								printf("Partindo de Angola/Luanda para Toronto, Canadá -> 9.955.000kz\n\n  ");
+							break;
 					
-					case 4:
-						printf("Europa\n\n ");
- 							printf("Preço de Voos Para a Europa - Classe Executiva\n\n ");
- 							printf("Partindo de Angola/Luanda para Alemanha -> 4.992.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para Rússia -> 7.266.000kz\n\n ");
- 							printf("Partindo de Angola/Luanda para Portugal -> 3.484.000kz\n\n ");
- 							printf("Partindo de Angola/Luanda para Bélgica -> 4.615.000kz\n\n ");
- 							printf("Partindo de Angola/Luanda para Croácia -> 4.693.000kz\n\n ");
-							printf("Partindo de Angola/Luanda para França -> 5.434.000kz\n\n ");
- 							printf("Partindo de Angola/Luanda para Grécia -> 5.820.000kz\n\n ");
- 							printf("Partindo de Angola/Luanda para Reino Unido -> 5.929.000kz\n\n ");
-					break;
+							case 4:
+								printf("Europa\n\n ");
+ 								printf("Preço de Voos Para a Europa - Classe Executiva\n\n ");
+ 								printf("Partindo de Angola/Luanda para Alemanha -> 4.992.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para Rússia -> 7.266.000kz\n\n ");
+ 								printf("Partindo de Angola/Luanda para Portugal -> 3.484.000kz\n\n ");
+ 								printf("Partindo de Angola/Luanda para Bélgica -> 4.615.000kz\n\n ");
+ 								printf("Partindo de Angola/Luanda para Croácia -> 4.693.000kz\n\n ");
+								printf("Partindo de Angola/Luanda para França -> 5.434.000kz\n\n ");
+ 								printf("Partindo de Angola/Luanda para Grécia -> 5.820.000kz\n\n ");
+ 								printf("Partindo de Angola/Luanda para Reino Unido -> 5.929.000kz\n\n ");
+							break;
 					
-					case 5:
-							printf("Preço de Voos Para o Oriente Médio - Classe Executiva\n\n ");
-							printf("Partindo de Angola/Luanda para Emirados Árabes Unidos -> 12.987.000kz\n\n ");
- 							printf("Partindo de Angola/Luanda para Arábia Saudita -> 10.486.000kz\n\n ");
- 							printf("Partindo de Angola/Luanda para Iraque -> 12.752.000kz\n\n ");
- 							printf("Partindo de Angola/Luanda para Irã -> 11.745.000kz\n\n ");
- 							printf("Partindo de Angola/Luanda para Israel -> 11.294.000kz\n\n ");
- 							printf("Partindo de Angola/Luanda para Jordânia -> 10.453.000kz\n\n ");
- 							printf("Partindo de Angola/Luanda para Omã -> 12.078.000kz\n\n ");
-					break;
+							case 5:
+								printf("Preço de Voos Para o Oriente Médio - Classe Executiva\n\n ");
+								printf("Partindo de Angola/Luanda para Emirados Árabes Unidos -> 12.987.000kz\n\n ");
+ 								printf("Partindo de Angola/Luanda para Arábia Saudita -> 10.486.000kz\n\n ");
+ 								printf("Partindo de Angola/Luanda para Iraque -> 12.752.000kz\n\n ");
+ 								printf("Partindo de Angola/Luanda para Irã -> 11.745.000kz\n\n ");
+ 								printf("Partindo de Angola/Luanda para Israel -> 11.294.000kz\n\n ");
+ 								printf("Partindo de Angola/Luanda para Jordânia -> 10.453.000kz\n\n ");
+ 								printf("Partindo de Angola/Luanda para Omã -> 12.078.000kz\n\n ");
+							break;
 					
-					case 6:
-						printf("Voltar\n\n");
-					break;
+							case 6:
+								printf("Voltar\n\n");
+							break;
 					
-					default:
-						printf("Opção Inválida");
-					break;
-				}
+							default:
+								printf("Opção Inválida");
+							break;
+						}
+				break;
+				
+				default:
+					printf("Opção Inválida");
 				break;
 			}
 		break;
 		
+		//Case 4: Menu para a Realização das Reservas
 		case 4:
 			printf("Reservas\n\n");
 			printf("Para Onde Deseja Ir?\n\n ");
 			printf("1- África\n\n 2- Ásia e Pacífico\n\n 3- Américas\n\n 4- Europa\n\n 5- Médio Oriente\n\n 6- Voltar\n\n");
 			scanf("%d", &z);
+			
+			//Switch Case Para: Escolher o Continente e o País onde se deseja viajar
 				switch(z)
 				{
 					case 1:
 						printf("Para qual País de África?\n\n ");
 						printf("1-África do Sul\n\n 2-Egipto\n\n 3-Marrocos\n\n 4-Namíbia\n\n 5-Costa do Marfim\n\n 6-Etiópia\n\n 7-Tunísia\n\n");
+						scanf("%d", &z);
+						
+						//Switch Case Para: Definir a Classe com a qual se deseja viajar
+							switch(z)
+							{
+								case 1:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+								
+										switch(x)
+										{
+											case 1:
+												printf("Você Escolheu a Classe Económica\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: África do Sul | Hora de Check-in: 18h00 | Preço a Pagar Pelos Bilhetes: %d kz\n\n ", HC*404000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: África do Sul | Hora de Check-in: 18h00 | Preço a Pagar Pelos Bilhetes: %d kz\n\n ", HC*1771000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 2:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+									
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Egipto | Hora de Check-in: 17h45 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*505000);
+													printf("Reserva Efetuada!\n");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Egipto | Hora de Check-in: 17h45 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*2730000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 3:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+									
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Marrocos | Hora de Check-in: 16h30 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*404000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Marrocos | Hora de Check-in: 16h30 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*2644000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 4:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+									
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Namíbia | Hora de Check-in: 10h00 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*303000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Namíbia | Hora de Check-in: 10h00 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*1764000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 5:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+									
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Costa do Marfim | Hora de Check-in: 07h10 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*606000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Costa do Marfim | Hora de Check-in: 07h10 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*2461000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 6:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+									
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Etiópia | Hora de Check-in: 06h20 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*505000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Etiópia | Hora de Check-in: 06h20 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*2160000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 7:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+									
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Tunísia | Hora de Check-in: 17h50 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*505000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Tunísia | Hora de Check-in: 17h50 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*2987000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								default:
+									printf("Opção Inválida\n\n");
+								break;
+							}
+						
+					break;
+				
+					//PAÍSES da Ásia
+					case 2:
+						printf("Para qual País da Ásia e o Pacífico?\n\n ");
+						printf("1-China\n\n 2-Japão\n\n 3-Austrália\n\n 4-Afeganistão\n\n 5-Índia\n\n 6-Filipinas\n\n 7-Indonésia\n\n 8-Maldivas\n\n ");
+						printf("9-República da Coreia\n\n 10-Tailândia\n\n");
 						scanf("%d", &z);
 							switch(z)
 							{
@@ -436,10 +684,23 @@ scanf("%d", &x);
 										switch(x)
 										{
 											case 1:
-												printf("Quantos Bilhetes deseja Comprar?\n");
+												printf("Você Escolheu a Classe Económica\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n");
 												scanf("%d", &HC);
-													printf("País Escolhido: África do Sul | Hora de Check-in: 18h00 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*404.000);
+													printf("País Escolhido: China | Hora de Check-in: 11h10 | Preço a Pagar Pelos Bilhetes: %d kz\n\n ", HC*1374000);
 													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: China | Hora de Check-in: 11h10 | Preço a Pagar Pelos Bilhetes: %d kz\n\n ", HC*4197000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
 											break;
 										}
 								break;
@@ -453,8 +714,20 @@ scanf("%d", &x);
 											case 1:	
 												printf("Quantos Bilhetes deseja Comprar?\n");
 												scanf("%d", &HC);
-													printf("País Escolhido: Egipto | Hora de Check-in: 17h45 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*505000);
+													printf("País Escolhido: Japão  | Hora de Check-in: 20h35 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*1190000);
 													printf("Reserva Efetuada!\n");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Japão  | Hora de Check-in: 20h35 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*3667000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
 											break;
 										}
 								break;
@@ -467,8 +740,20 @@ scanf("%d", &x);
 											case 1:	
 												printf("Quantos Bilhetes deseja Comprar?\n");
 												scanf("%d", &HC);
-													printf("País Escolhido: Marrocos | Hora de Check-in: 16h30 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*404000);
+													printf("País Escolhido: Austrália  | Hora de Check-in: 14h30 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*1580000);
 													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Austrália  | Hora de Check-in: 14h30 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*4999000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
 											break;
 										}
 								break;
@@ -481,8 +766,20 @@ scanf("%d", &x);
 											case 1:	
 												printf("Quantos Bilhetes deseja Comprar?\n");
 												scanf("%d", &HC);
-													printf("País Escolhido: Namíbia | Hora de Check-in: 10h00 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*303000);
+													printf("País Escolhido: Austrália  | Hora de Check-in: 07h00 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*1336000);
 													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Austrália  | Hora de Check-in: 07h00 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*3292000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
 											break;
 										}
 								break;
@@ -495,8 +792,20 @@ scanf("%d", &x);
 											case 1:	
 												printf("Quantos Bilhetes deseja Comprar?\n");
 												scanf("%d", &HC);
-													printf("País Escolhido: Costa do Marfim | Hora de Check-in: 07h10 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*606.000);
+													printf("País Escolhido: Índia  | Hora de Check-in: 07h50 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*837000);
 													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Índia  | Hora de Check-in: 07h50 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*4138000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
 											break;
 										}
 								break;
@@ -509,8 +818,20 @@ scanf("%d", &x);
 											case 1:	
 												printf("Quantos Bilhetes deseja Comprar?\n");
 												scanf("%d", &HC);
-													printf("País Escolhido: Etiópia | Hora de Check-in: 06h20 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*505.000);
+													printf("País Escolhido: Filipinas  | Hora de Check-in: 18h20 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*1088000);
 													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Filipinas  | Hora de Check-in: 18h20 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*2605000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
 											break;
 										}
 								break;
@@ -523,8 +844,98 @@ scanf("%d", &x);
 											case 1:	
 												printf("Quantos Bilhetes deseja Comprar?\n");
 												scanf("%d", &HC);
-													printf("País Escolhido: Tunísia | Hora de Check-in: 17h50 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*505.000);
+													printf("País Escolhido: Indonésia  | Hora de Check-in: 17h20 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*972000);
 													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Indonésia  | Hora de Check-in: 17h20 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*3420000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								case 8:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Maldivas   | Hora de Check-in: 13h30 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*1134000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Maldivas   | Hora de Check-in: 13h30 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*3044000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								case 9:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: República da Coreia  | Hora de Check-in: 21h50 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*1332000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: República da Coreia  | Hora de Check-in: 21h50 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*3532000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								case 10:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Tailândia   | Hora de Check-in: 19h40 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*1049000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Tailândia   | Hora de Check-in: 19h40 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*4111000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
 											break;
 										}
 								break;
@@ -532,28 +943,592 @@ scanf("%d", &x);
 									printf("Opção Inválida\n\n");
 								break;
 							}
+					break;
+				
+					//Países das Américas
+					case 3:
+						printf("Para qual País das Américas?\n\n ");
+						printf("1-Argentina\n\n 2-Brasil\n\n 3-Estados Unidos\n\n 4-México\n\n 5-Canadá\n\n ");
+						scanf("%d", &z);
+							switch(z)
+							{
+								case 1:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:
+												printf("Você Escolheu a Classe Económica\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Argentina  | Hora de Check-in: 15h00 | Preço a Pagar Pelos Bilhetes: %d kz\n\n ", HC*572000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Argentina  | Hora de Check-in: 15h00 | Preço a Pagar Pelos Bilhetes: %d kz\n\n ", HC*8596000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 2:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Brasil | Hora de Check-in: 10h45 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*601000);
+													printf("Reserva Efetuada!\n");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Brasil | Hora de Check-in: 10h45 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*7853000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 3:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Estados Unidos | Hora de Check-in: 18h30 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*782000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Estados Unidos | Hora de Check-in: 18h30 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*9711000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 4:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: México  | Hora de Check-in: 12h00 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*732000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: México  | Hora de Check-in: 12h00 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*9498000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 5:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Canadá  | Hora de Check-in: 17h10 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*920000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Canadá  | Hora de Check-in: 17h10 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*9955000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								default:
+									printf("Opção Inválida\n\n");
+								break;
+							}
 						
 					break;
-					
-					case 2:
-						printf("Ásia e Pacífico\n\n ");
-						printf("China\n\n Japão\n\n Austrália\n\n Afeganistão\n\n Índia\n\n Filipinas\n\n Indonésia\n\n Maldivas\n\n ");
-						printf("República da Coreia\n\n Tailândia\n\n");
-					break;
-					
-					case 3:
-						printf("Américas\n\n ");
-						printf("Argentina\n\n Brazil\n\n Estados Unidos\n\n México\n\n Canadá\n\n");
-					break;
-					
+				
+					//Países da Europa
 					case 4:
-						printf("Europa\n\n ");
-						printf("Alemanha\n\n Rússia\n\n Portugal\n\n Bélgica\n\n Croácia\n\n França\n\n Grécia\n\n Reino Unido\n\n");
+						printf("Para qual País da Europa?\n\n ");
+						printf("1-Alemanha\n\n 2-Rússia\n\n 3-Portugal\n\n 4-Bélgica\n\n 5-5-Croácia\n\n ");
+						printf("6-França\n\n 7-Grécia\n\n 8-Reino Unido\n\n");
+						scanf("%d", &z);
+							switch(z)
+							{
+								case 1:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:
+												printf("Você Escolheu a Classe Económica\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Alemanha  | Hora de Check-in: 17h00 | Preço a Pagar Pelos Bilhetes: %d kz\n\n ", HC*807000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Alemanha  | Hora de Check-in: 17h00 | Preço a Pagar Pelos Bilhetes: %d kz\n\n ", HC* 4992000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 2:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Rússia | Hora de Check-in: 12h45 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*1070000);
+													printf("Reserva Efetuada!\n");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Rússia | Hora de Check-in: 12h45 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*7266000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 3:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Portugal | Hora de Check-in: 15h30 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*520000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Portugal | Hora de Check-in: 15h30 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*3484000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 4:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Bélgica  | Hora de Check-in: 16h00 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*705000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Bélgica  | Hora de Check-in: 16h00 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*4615000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 5:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Croácia  | Hora de Check-in: 19h10 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*870000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Croácia  | Hora de Check-in: 19h10 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*4693000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 6:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: França  | Hora de Check-in: 06h20 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*737000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: França  | Hora de Check-in: 06h20 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*5434000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 7:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Grécia  | Hora de Check-in: 14h40 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*965000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Grécia  | Hora de Check-in: 14h40 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*5820000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 8:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Reino Unido  | Hora de Check-in: 08h50 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*680000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Reino Unido  | Hora de Check-in: 08h50 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*5929000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								default:
+									printf("Opção Inválida\n\n");
+								break;
+							}
+						
 					break;
-					
+					//Países do Oriente Médio
 					case 5:
-						printf("Oriente Médio\n\n");
-						printf("Emirados Árabes Unidos\n\n Arábia Saudita\n\n Iraque\n\n Irã\n\n Israel\n\n Jordânia\n\n Omã\n\n");
+						printf("Para qual País do Oriente Médio?\n\n ");
+						printf("1-Emirados Árabes Unidos\n\n 2-Arábia Saudita\n\n 3-Iraque\n\n 4-Irã\n\n 5-Israel\n\n ");
+						printf("6-Jordânia\n\n 7-Omã\n\n ");
+						scanf("%d", &z);
+							switch(z)
+							{
+								case 1:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:
+												printf("Você Escolheu a Classe Económica\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Emirados Árabes Unidos  | Hora de Check-in: 20h00 | Preço a Pagar Pelos Bilhetes: %d kz\n\n ", HC*960000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Emirados Árabes Unidos  | Hora de Check-in: 20h00 | Preço a Pagar Pelos Bilhetes: %d kz\n\n ", HC*12987000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 2:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Arábia Saudita | Hora de Check-in: 17h45 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*1180000);
+													printf("Reserva Efetuada!\n");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Arábia Saudita | Hora de Check-in: 17h45 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*10486000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 3:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Iraque | Hora de Check-in: 17h30 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*1160000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Iraque | Hora de Check-in: 17h30 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*12752000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 4:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Irã  | Hora de Check-in: 10h00 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*1042000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Irã  | Hora de Check-in: 10h00 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*11745000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 5:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Israel  | Hora de Check-in: 06h10 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*1245000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Israel  | Hora de Check-in: 06h10 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*11294000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 6:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Jordânia  | Hora de Check-in: 21h20 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*1045000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Jordânia  | Hora de Check-in: 21h20 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*10453000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								case 7:
+									printf("Com qual classe deseja viajar?\n\n ");
+									printf("1-Classe Económica\n\n 2-Classe Executiva\n\n ");
+									scanf("%d", &x);
+										switch(x)
+										{
+											case 1:	
+												printf("Quantos Bilhetes deseja Comprar?\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Omã  | Hora de Check-in: 09h50 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*1080000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											case 2:
+												printf("Você Escolheu a Classe Executiva\n\n ");
+												printf("Quantos Bilhetes Deseja Comprar?\n\n");
+												scanf("%d", &HC);
+													printf("País Escolhido: Omã  | Hora de Check-in: 09h50 | Preço a Pagar Pelos Bilhetes: %dkz\n\n ", HC*12078000);
+													printf("Reserva Efetuada!");
+											break;
+											
+											default:
+												printf("Opção Inválida");
+											break;
+										}
+								break;
+								
+								default:
+									printf("Opção Inválida\n\n");
+								break;
+							}
+						
 					break;
 					
 					case 6:
